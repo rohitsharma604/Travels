@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gour Travels - explore Ajmer and Pushkar: Dargah Sharif, Ana Sagar Lake, Taragarh Fort and the Brahma Temple.">
+  <title>Gour Travels - Incredible Ajmer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo">
+        <span class="logo-text">Gour Travels</span>
+      </a>
+
+      <!-- Pure CSS Mobile Hamburger Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle Navigation">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Pure CSS Backdrop to close drawer by tapping outside -->
+      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#packages" class="nav-link">Packages</a></li>
+          <li><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <!-- Right Utilities (Search + Language) -->
+        <div class="nav-utilities">
+          <button class="icon-btn search-btn" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+          <div class="lang-selector">
+            <span>EN</span>
+            <svg class="chevron-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <!-- Top-Right Decorative Saffron Mandala Pattern -->
+    <div class="hero-mandala-ornament" aria-hidden="true">
+      <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#e25b20" stroke-width="1.5" opacity="0.85">
+          <circle cx="200" cy="0" r="190" stroke-dasharray="4 4" />
+          <circle cx="200" cy="0" r="165" />
+          <circle cx="200" cy="0" r="140" stroke-dasharray="6 4" />
+          <circle cx="200" cy="0" r="115" />
+          <circle cx="200" cy="0" r="90" stroke-dasharray="3 3" />
+          <circle cx="200" cy="0" r="65" />
+          <circle cx="200" cy="0" r="40" />
+          <!-- Radial Petals & Lace Details -->
+          <path d="M200,0 L70,130 M200,0 L90,170 M200,0 L120,195 M200,0 L155,200 M200,0 L40,70 M200,0 L10,130" opacity="0.6"/>
+          <path d="M200,165 Q160,150 165,200 Q130,140 140,200 Q100,120 115,190 Q80,90 90,165" fill="#e25b20" fill-opacity="0.12"/>
+          <circle cx="150" cy="50" r="14" fill="#e25b20" fill-opacity="0.2"/>
+          <circle cx="110" cy="90" r="12" fill="#e25b20" fill-opacity="0.2"/>
+          <circle cx="70" cy="140" r="10" fill="#e25b20" fill-opacity="0.2"/>
+        </g>
+      </svg>
+    </div>
+
+    <!-- Background Watermark Text -->
+    <div class="watermark hero-watermark" aria-hidden="true">Ajmer</div>
+
+    <div class="container hero-container">
+      <!-- Left: Circular Masked Image -->
+      <div class="hero-image-wrapper">
+        <div class="hero-circle-frame">
+          <img src="images/hero_dargah_sharif.jpg" alt="Ajmer Sharif Dargah, Ajmer" class="hero-img" loading="eager">
+        </div>
+      </div>
+
+      <!-- Right: Hero Typography -->
+      <div class="hero-content">
+        <span class="hero-script-tag">Incredible</span>
+        <h1 class="hero-title">Ajmer</h1>
+        <p class="hero-subtitle">Lifelong memories just few seconds away</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== POPULAR DESTINATION SECTION ==================== -->
+  <section class="destinations-section" id="packages">
+    <!-- Background Watermark -->
+    <div class="watermark destination-watermark" aria-hidden="true">Destination</div>
+
+    <div class="container">
+      <!-- Section Header with Slider Navigation -->
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge">WHAT TO EXPLORE</span>
+          <h2 class="section-heading">Popular Destination</h2>
+        </div>
+
+        <div class="slider-arrows">
+          <button class="arrow-btn prev-btn" aria-label="Previous destination">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="arrow-btn next-btn" aria-label="Next destination">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Cards Grid Area with Left Mandala Motif -->
+      <div class="destination-showcase">
+        <!-- Left Side Floating Mandala Ornament -->
+        <div class="side-mandala-ornament" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="#241e1c" stroke-width="1.8" opacity="0.85">
+              <circle cx="80" cy="80" r="74" stroke-dasharray="3 3"/>
+              <circle cx="80" cy="80" r="62"/>
+              <circle cx="80" cy="80" r="48" stroke-dasharray="5 4"/>
+              <circle cx="80" cy="80" r="32"/>
+              <circle cx="80" cy="80" r="16"/>
+              <!-- Mandala Geometrics & Petals -->
+              <path d="M80,6 L80,154 M6,80 L154,80 M28,28 L132,132 M28,132 L132,28" opacity="0.4"/>
+              <path d="M80,18 C65,35 65,45 80,64 C95,45 95,35 80,18 Z" fill="#241e1c" fill-opacity="0.15"/>
+              <path d="M80,142 C65,125 65,115 80,96 C95,115 95,125 80,142 Z" fill="#241e1c" fill-opacity="0.15"/>
+              <path d="M18,80 C35,65 45,65 64,80 C45,95 35,95 18,80 Z" fill="#241e1c" fill-opacity="0.15"/>
+              <path d="M142,80 C125,65 115,65 96,80 C115,95 125,95 142,80 Z" fill="#241e1c" fill-opacity="0.15"/>
+            </g>
+          </svg>
+        </div>
+
+        <!-- 3 Popular Destination Cards -->
+        <div class="cards-grid">
+          <!-- Card 1: Dargah Sharif -->
+          <article class="destination-card">
+            <div class="card-media">
+              <img src="images/card_dargah_sharif.jpg" alt="Ajmer Sharif Dargah" class="card-img">
+            </div>
+            <div class="card-ribbon">
+              <h3 class="ribbon-title">Ajmer Sharif Dargah</h3>
+              <a href="#about" class="ribbon-link">
+                <span>Explore Now</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2: Ana Sagar Lake -->
+          <article class="destination-card">
+            <div class="card-media">
+              <img src="images/card_ana_sagar.jpg" alt="Ana Sagar Lake, Ajmer" class="card-img">
+            </div>
+            <div class="card-ribbon">
+              <h3 class="ribbon-title">Ana Sagar Lake</h3>
+              <a href="#about" class="ribbon-link">
+                <span>Explore Now</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 3: Brahma Temple, Pushkar -->
+          <article class="destination-card">
+            <div class="card-media">
+              <img src="images/card_brahma_temple.jpg" alt="Brahma Temple, Pushkar" class="card-img">
+            </div>
+            <div class="card-ribbon">
+              <h3 class="ribbon-title">Brahma Temple, Pushkar</h3>
+              <a href="#about" class="ribbon-link">
+                <span>Explore Now</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Scroll / Slider Progress Bar Indicator -->
+      <div class="slider-progress-track">
+        <div class="progress-bar-line">
+          <div class="progress-bar-active"></div>
+        </div>
+        <div class="progress-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e25b20" stroke-width="2" stroke-linecap="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT US SECTION ==================== -->
+  <section class="about-section" id="about">
+    <div class="container about-container">
+      <!-- Left: Arch-top Panoramic Image -->
+      <div class="about-image-wrapper">
+        <img src="images/about_taragarh_fort.jpg" alt="Taragarh Fort overlooking Ajmer" class="about-img">
+      </div>
+
+      <!-- Right: About Us Copy -->
+      <div class="about-content">
+        <span class="section-badge">ABOUT US</span>
+        <h2 class="section-heading">Travel To Every Corner Of Ajmer And Pushkar</h2>
+        <p class="about-desc">
+          Gour Travels is a local Ajmer travel service. We take you to Dargah Sharif, Ana Sagar, Taragarh Fort and the holy town of Pushkar, with comfortable rides and honest prices.
+        </p>
+        <p class="about-desc-secondary">
+          Experience the calm of ancient shrines, the beauty of the Aravalli hills and the rich culture of Rajasthan, guided by people who call Ajmer home.
+        </p>
+        <div class="about-action">
+          <a href="#packages" class="btn btn-primary">Explore Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== HIGHLIGHTS CARDS SECTION ==================== -->
+  <section class="highlights-section">
+    <div class="container">
+      <div class="highlights-grid">
+        <!-- Highlight Card 1: Adhai Din Ka Jhonpra -->
+        <article class="highlight-card">
+          <div class="card-media">
+            <img src="images/highlight_adhai_din_ka_jhonpra.jpg" alt="Adhai Din Ka Jhonpra, Ajmer" class="card-img">
+          </div>
+          <div class="card-ribbon">
+            <h3 class="ribbon-title">Adhai Din Ka Jhonpra</h3>
+            <a href="#about" class="ribbon-link">
+              <span>Explore Now</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Highlight Card 2: Soniji Ki Nasiyan -->
+        <article class="highlight-card">
+          <div class="card-media">
+            <img src="images/highlight_soniji_ki_nasiyan.jpg" alt="Soniji Ki Nasiyan, Ajmer" class="card-img">
+          </div>
+          <div class="card-ribbon">
+            <h3 class="ribbon-title">Soniji Ki Nasiyan</h3>
+            <a href="#about" class="ribbon-link">
+              <span>Explore Now</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Pagination Indicators -->
+      <div class="carousel-dots" aria-hidden="true">
+        <span class="dot-bar active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== NEWSLETTER BANNER SECTION ==================== -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-banner" style="background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.45)), url('images/newsletter_pushkar_lake.jpg');">
+        <div class="newsletter-content">
+          <h2 class="newsletter-heading">
+            Subscribe our newsletter to<br>Get travel agency news
+          </h2>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="input-group">
+              <input type="email" id="newsletterEmail" placeholder="Enter your e-mail" required class="newsletter-input" aria-label="Enter your e-mail">
+              <button type="submit" class="newsletter-btn" aria-label="Submit Newsletter">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#e25b20" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+          <!-- Confirmation Message Container -->
+          <div id="confirmationMessage" style="display: none; margin-top: 15px; color: #fff; font-weight: 600; background: rgba(226, 91, 32, 0.9); padding: 10px 15px; border-radius: 5px; text-align: center;">
+            Thank you! Aapka email successfully subscribe ho gaya hai.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHY CHOOSE US SECTION ==================== -->
+  <section class="choose-us-section">
+    <!-- Watermark Background -->
+    <div class="watermark choose-watermark" aria-hidden="true">Gour Travels</div>
+
+    <div class="container choose-container">
+      <!-- Left: Feature Image -->
+      <div class="choose-media-wrapper">
+        <img src="images/choose_pushkar_camel.jpg" alt="Decorated camel at Pushkar" class="choose-camel-img">
+
+        <!-- Slider Controls below image on mobile/tablet -->
+        <div class="slider-arrows choose-slider-arrows">
+          <button class="arrow-btn prev-btn" aria-label="Previous">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="15 18 9 12 15 6"></polyline>
+            </svg>
+          </button>
+          <button class="arrow-btn next-btn" aria-label="Next">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: Why Choose Us Cream Card -->
+      <div class="choose-card">
+        <span class="choose-badge">Best way</span>
+        <h2 class="choose-heading">travellers <span class="highlight-orange">choose</span> us!</h2>
+        <div class="choose-desc">
+          <ul>
+            <li>Ajmer and Pushkar are two of Rajasthan's most special cities, just 15 km apart.</li>
+            <li>In Ajmer, the calm of Dargah Sharif and evenings at Ana Sagar win every heart.</li>
+            <li>In Pushkar, the holy lake, Brahma Temple and ghats draw every traveller.</li>
+            <li>The road between the two winds through the Aravalli hills.</li>
+            <li>A bike is the best way to ride this route.</li>
+            <li>During Pushkar Mela and Urs, both cities get very crowded.</li>
+            <li>On a bike, you can skip the jams and travel at ease.</li>
+            <li>That is why Gour Travels exists: to let you see both cities your own way.</li>
+          </ul>
+        </div>
+        <div class="choose-action">
+          <a href="tel:+919509599718" class="btn btn-primary">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <!-- Seamless Wave Divider above Footer -->
+  <div class="footer-wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" preserveAspectRatio="none">
+      <path d="M0,80 C320,15 720,50 1440,20 L1440,80 L0,80 Z" fill="#1c1817"/>
+    </svg>
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <!-- Right Side Orange Mandala Motif -->
+    <div class="footer-mandala-ornament" aria-hidden="true">
+      <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#e25b20" stroke-width="1.6" opacity="0.85">
+          <circle cx="180" cy="90" r="84" stroke-dasharray="4 3"/>
+          <circle cx="180" cy="90" r="70"/>
+          <circle cx="180" cy="90" r="54" stroke-dasharray="5 3"/>
+          <circle cx="180" cy="90" r="38"/>
+          <circle cx="180" cy="90" r="22"/>
+          <!-- Ornate Petals -->
+          <path d="M180,6 C165,30 165,45 180,60" />
+          <path d="M180,120 C165,135 165,150 180,174" />
+          <path d="M100,90 C120,75 135,75 150,90 C135,105 120,105 100,90 Z" fill="#e25b20" fill-opacity="0.15"/>
+        </g>
+      </svg>
+    </div>
+  
+
+    <div class="container footer-container">
+      <div class="footer-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-col footer-col-brand">
+          <a href="#home" class="footer-brand-logo">Gour Travels</a>
+          <p class="footer-bio">
+            Rohit Gour<br>
+            Ajmer, Rajasthan<br>
+            <a href="tel:+919509599718">9509599718</a>
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col footer-col-links">
+          <h3 class="footer-col-title">Home</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#packages">Destinations</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Social Media Links -->
+        <div class="footer-col footer-col-social">
+          <h3 class="footer-col-title">Follow Us</h3>
+          <div class="social-icons">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 4: Camel Image -->
+        <div class="footer-col footer-col-camel">
+          <div class="footer-camel-wrapper">
+            <img src="images/footer_camel.jpg" alt="Decorated camel in Rajasthan" class="footer-camel-img">
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          Copyright &copy; 2026 Gour Travels. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Script -->
+  <script>
+    document.getElementById('newsletterForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const emailInput = document.getElementById('newsletterEmail');
+      const confirmationMsg = document.getElementById('confirmationMessage');
+      
+      if(emailInput.value) {
+        this.style.display = 'none';
+        confirmationMsg.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
